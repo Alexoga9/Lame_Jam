@@ -1,16 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737415481
+::res://::1737416430
+icon.webp::CompressedTexture2D::7599764842350834070::1737416430::1737416430::1::::<><>::
 ::res://Menu UI/::1737415481
 default_bus_layout.tres::AudioBusLayout::2177657045733173192::1737415481::0::1::::<><>::
 personaje.gd::GDScript::-1::1737415481::0::1::::<>CharacterBody2D<>::
-::res://Menu UI/Menu assets/::1737415481
+::res://Menu UI/Menu assets/::1737415482
 please-calm-my-mind.mp3::AudioStreamMP3::3244109325977163205::1737415481::1737415482::1::::<><>::
-::res://Menu UI/Menu Principal/::1737415481
+::res://Menu UI/Menu Principal/::1737416187
 menu_principal.gd::GDScript::-1::1737415481::0::1::::<>Control<>::
-menu_principal.tscn::PackedScene::5323707003753241877::1737415481::0::1::::<><>::res://Menu UI/Menu Principal/menu_principal.gd<>uid://buvxrjjcletgk::::res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres<>uid://bmhqahwr7ri82::::res://Menu UI/Menu assets/please-calm-my-mind.mp3
-::res://Menu UI/Menu Principal/Theme/::1737415481
+menu_principal.tscn::PackedScene::5323707003753241877::1737416187::0::1::::<><>::res://Menu UI/Menu Principal/menu_principal.gd<>uid://buvxrjjcletgk::::res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres<>uid://bmhqahwr7ri82::::res://Menu UI/Menu assets/please-calm-my-mind.mp3
+::res://Menu UI/Menu Principal/Theme/::1737415503
 Star Cartoon.otf::FontFile::5937351035788541704::1737415481::1737415482::1::::<><>::
-theme_menu_principal.tres::Theme::3834976825338156914::1737415481::0::1::::<><>::uid://cqudklsn55or5::::res://Menu UI/Menu Principal/Theme/Star Cartoon.otf
+theme_menu_principal.tres::Theme::3834976825338156914::1737415503::0::1::::<><>::uid://cqudklsn55or5::::res://Menu UI/Menu Principal/Theme/Star Cartoon.otf
 ::res://Menu UI/Mundo/::1737415481
 background.tscn::PackedScene::7119609307106430150::1737415481::0::1::::<><>::
 character_body_2d.tscn::PackedScene::9125011615849549166::1737415481::0::1::::<><>::uid://botn8c71j63iu::::res://icon.svg
