@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmhqahwr7ri82"
+path="res://.godot/imported/please-calm-my-mind.mp3-8068b243071fcea7b1ccae406e725475.mp3str"
+
+[deps]
+
+source_file="res://Menu UI/Menu assets/please-calm-my-mind.mp3"
+dest_files=["res://.godot/imported/please-calm-my-mind.mp3-8068b243071fcea7b1ccae406e725475.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

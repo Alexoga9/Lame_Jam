@@ -1,0 +1,402 @@
+[gd_scene load_steps=7 format=3 uid="uid://ch33xadcdotmr"]
+
+[ext_resource type="Script" path="res://Menu UI/Menu Principal/menu_principal.gd" id="1_20is8"]
+[ext_resource type="Theme" uid="uid://buvxrjjcletgk" path="res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres" id="1_rye18"]
+[ext_resource type="AudioStream" uid="uid://bmhqahwr7ri82" path="res://Menu UI/Menu assets/please-calm-my-mind.mp3" id="3_uitcx"]
+
+[sub_resource type="Gradient" id="Gradient_ltswk"]
+colors = PackedColorArray(0, 0.364706, 0.964706, 1, 1.06369e-05, 0.178469, 0.512199, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_p223j"]
+gradient = SubResource("Gradient_ltswk")
+fill = 1
+fill_from = Vector2(0.494624, 0.532258)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6ee3l"]
+texture = SubResource("GradientTexture2D_p223j")
+
+[node name="Menu Principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_20is8")
+
+[node name="Menu Principal" type="Panel" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu Principal"]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = -225.0
+offset_right = 250.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Menu" type="Label" parent="Menu Principal/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 100
+text = "Menu Principal"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Jugar" type="Button" parent="Menu Principal/VBoxContainer"]
+custom_minimum_size = Vector2(0, 150)
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "Jugar"
+metadata/_edit_use_anchors_ = true
+
+[node name="Opciones" type="Button" parent="Menu Principal/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "Opciones"
+metadata/_edit_use_anchors_ = true
+
+[node name="Salir" type="Button" parent="Menu Principal/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "Salir"
+metadata/_edit_use_anchors_ = true
+
+[node name="Opciones" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
+
+[node name="Atras" type="Button" parent="Opciones"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.043
+anchor_top = 0.108
+anchor_right = 0.113
+anchor_bottom = 0.231
+offset_left = 0.464043
+offset_top = 0.0159988
+offset_right = -0.175964
+offset_bottom = 0.312012
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "<"
+metadata/_edit_use_anchors_ = true
+
+[node name="Opciones" type="Label" parent="Opciones"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.243056
+anchor_top = 0.108025
+anchor_right = 0.741549
+anchor_bottom = 0.276543
+offset_right = -0.264099
+offset_bottom = -0.200012
+grow_horizontal = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 60
+text = "Opciones"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Resolucion" type="Button" parent="Opciones"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0624962
+anchor_top = 0.308253
+anchor_right = 0.28
+anchor_bottom = 0.432
+offset_left = -1.99562
+offset_top = 0.25206
+offset_right = -0.559998
+offset_bottom = 0.0639954
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "Resolucion"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sonido" type="Button" parent="Opciones"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0624962
+anchor_top = 0.54
+anchor_right = 0.243
+anchor_bottom = 0.664
+offset_left = -1.99562
+offset_top = 0.0799866
+offset_right = 0.0639954
+offset_bottom = -0.272034
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "Sonido"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sonido" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
+
+[node name="AtrasSonido" type="Button" parent="Sonido"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.043
+anchor_top = 0.108
+anchor_right = 0.113
+anchor_bottom = 0.231
+offset_left = 0.464043
+offset_top = 0.0159988
+offset_right = -0.175964
+offset_bottom = 0.312012
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "<"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sonido" type="Label" parent="Sonido"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.243056
+anchor_top = 0.108025
+anchor_right = 0.741549
+anchor_bottom = 0.276543
+offset_right = -0.264099
+offset_bottom = -0.200012
+grow_horizontal = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 60
+text = "Sonido"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Sonido"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 481.0
+offset_top = -68.0
+offset_right = -504.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Sonido/MarginContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Opciones" type="Label" parent="Sonido/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 60
+text = "Volumen"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Volumen" type="HSlider" parent="Sonido/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+size_flags_vertical = 1
+min_value = -80.0
+max_value = 6.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sonido/MarginContainer/HBoxContainer/Volumen"]
+stream = ExtResource("3_uitcx")
+autoplay = true
+parameters/looping = false
+
+[node name="Resolucion" type="Panel" parent="."]
+unique_name_in_owner = true
+visibility_layer = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
+
+[node name="AtrasResolucion" type="Button" parent="Resolucion"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.043
+anchor_top = 0.108
+anchor_right = 0.113
+anchor_bottom = 0.231
+offset_left = 0.464043
+offset_top = 0.0159988
+offset_right = -0.175964
+offset_bottom = 0.312012
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 40
+text = "<"
+metadata/_edit_use_anchors_ = true
+
+[node name="Resolicion" type="Label" parent="Resolucion"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.243056
+anchor_top = 0.108025
+anchor_right = 0.741549
+anchor_bottom = 0.276543
+offset_right = -0.264099
+offset_bottom = -0.200012
+grow_horizontal = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 60
+text = "Resolucion"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="Resolucion"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -437.5
+offset_top = -125.0
+offset_right = 437.5
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Resolucion/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Resolucion/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Resoluciones2" type="Label" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 60
+text = "Resoluciones"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Resoluciones" type="OptionButton" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+selected = 2
+fit_to_longest_item = false
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Resolucion/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Modo de pantalla" type="Label" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 60
+text = "Modo de pantalla"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Modo de pantalla elegir" type="OptionButton" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+selected = 0
+fit_to_longest_item = false
+item_count = 3
+popup/item_0/text = "Windowed"
+popup/item_1/text = "Maximized"
+popup/item_1/id = 1
+popup/item_2/text = "Fullscreen"
+popup/item_2/id = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Resolucion/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="Borderless" type="Label" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+theme = ExtResource("1_rye18")
+theme_override_font_sizes/font_size = 60
+text = "Borderless"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Borderless elegir" type="CheckBox" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[connection signal="pressed" from="Menu Principal/VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="Menu Principal/VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="Menu Principal/VBoxContainer/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="Opciones/Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="Opciones/Resolucion" to="." method="_on_resolucion_pressed"]
+[connection signal="pressed" from="Opciones/Sonido" to="." method="_on_sonido_pressed"]
+[connection signal="pressed" from="Sonido/AtrasSonido" to="." method="_on_atras_sonido_pressed"]
+[connection signal="value_changed" from="Sonido/MarginContainer/HBoxContainer/Volumen" to="." method="_on_volumen_value_changed"]
+[connection signal="pressed" from="Resolucion/AtrasResolucion" to="." method="_on_atras_resolucion_pressed"]
+[connection signal="item_selected" from="Resolucion/MarginContainer/VBoxContainer/HBoxContainer/Resoluciones" to="." method="_on_resoluciones_item_selected"]
+[connection signal="item_selected" from="Resolucion/MarginContainer/VBoxContainer/HBoxContainer2/Modo de pantalla elegir" to="." method="_on_modo_de_pantalla_elegir_item_selected"]
+[connection signal="toggled" from="Resolucion/MarginContainer/VBoxContainer/HBoxContainer3/Borderless elegir" to="." method="_on_borderless_elegir_toggled"]

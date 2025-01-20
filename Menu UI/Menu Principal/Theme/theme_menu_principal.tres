@@ -1,0 +1,50 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://buvxrjjcletgk"]
+
+[ext_resource type="FontFile" uid="uid://cqudklsn55or5" path="res://Menu UI/Menu Principal/Theme/Star Cartoon.otf" id="1_0jas5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kxtxy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6uoj5"]
+bg_color = Color(0.269337, 0.524171, 0.999997, 1)
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(2.01187e-05, 0.323359, 0.869837, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(0, 0, 0, 0.337255)
+shadow_size = 20
+shadow_offset = Vector2(20, 20)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpofa"]
+bg_color = Color(2.77233e-05, 0.363568, 0.964426, 1)
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(4.13924e-06, 0.149936, 0.445933, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(0, 0, 0, 0.337255)
+shadow_size = 20
+shadow_offset = Vector2(20, 20)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iyjf2"]
+bg_color = Color(1.02037e-05, 0.253312, 0.6959, 1)
+border_color = Color(2.20198e-06, 0.103525, 0.332491, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+shadow_color = Color(0, 0, 0, 0.337255)
+shadow_size = 20
+shadow_offset = Vector2(20, 20)
+
+[resource]
+Button/fonts/font = ExtResource("1_0jas5")
+Button/styles/focus = SubResource("StyleBoxEmpty_kxtxy")
+Button/styles/hover = SubResource("StyleBoxFlat_6uoj5")
+Button/styles/normal = SubResource("StyleBoxFlat_bpofa")
+Button/styles/pressed = SubResource("StyleBoxFlat_iyjf2")
+Label/fonts/font = ExtResource("1_0jas5")

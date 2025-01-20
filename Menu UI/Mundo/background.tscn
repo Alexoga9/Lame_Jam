@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8o16poetryug"]
+
+[sub_resource type="Gradient" id="Gradient_m1wn6"]
+colors = PackedColorArray(0, 0.211261, 0.357668, 1, 0, 0.520285, 0.848484, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_87jvl"]
+gradient = SubResource("Gradient_m1wn6")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3tckn"]
+texture = SubResource("GradientTexture2D_87jvl")
+
+[node name="Background" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_3tckn")
+metadata/_edit_use_anchors_ = true
