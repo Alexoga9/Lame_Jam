@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://drieqv0q3qej6"]
+[gd_scene load_steps=3 format=3 uid="uid://drieqv0q3qej6"]
 
 [ext_resource type="Script" path="res://Menu UI/Pausa/MenuPausa.gd" id="1_068xl"]
+[ext_resource type="Theme" uid="uid://buvxrjjcletgk" path="res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres" id="2_wnb8o"]
 
 [node name="Pausa" type="ColorRect"]
 anchors_preset = 15
@@ -24,5 +25,5 @@ offset_right = 23.5
 offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 100
+theme = ExtResource("2_wnb8o")
 text = "Pausa"

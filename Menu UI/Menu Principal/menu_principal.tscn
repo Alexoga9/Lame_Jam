@@ -26,6 +26,7 @@ script = ExtResource("1_20is8")
 
 [node name="Menu Principal" type="Panel" parent="."]
 unique_name_in_owner = true
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -35,51 +36,42 @@ grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Menu Principal"]
-custom_minimum_size = Vector2(500, 300)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -250.0
-offset_top = -225.0
-offset_right = 250.0
-offset_bottom = 225.0
+offset_left = -57.5
+offset_top = -60.5
+offset_right = 57.5
+offset_bottom = 60.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 50
 alignment = 1
 
 [node name="Menu" type="Label" parent="Menu Principal/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 100
 text = "Menu Principal"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Jugar" type="Button" parent="Menu Principal/VBoxContainer"]
-custom_minimum_size = Vector2(0, 150)
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
 text = "Jugar"
 metadata/_edit_use_anchors_ = true
 
 [node name="Opciones" type="Button" parent="Menu Principal/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
 text = "Opciones"
 metadata/_edit_use_anchors_ = true
 
 [node name="Salir" type="Button" parent="Menu Principal/VBoxContainer"]
-custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
 text = "Salir"
 metadata/_edit_use_anchors_ = true
 
@@ -95,74 +87,47 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
 
-[node name="Atras" type="Button" parent="Opciones"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Opciones"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.043
-anchor_top = 0.108
-anchor_right = 0.113
-anchor_bottom = 0.231
-offset_left = 0.464043
-offset_top = 0.0159988
-offset_right = -0.175964
-offset_bottom = 0.312012
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Opciones/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Atras" type="Button" parent="Opciones/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
-text = "<"
+text = " < "
 metadata/_edit_use_anchors_ = true
 
-[node name="Opciones" type="Label" parent="Opciones"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.243056
-anchor_top = 0.108025
-anchor_right = 0.741549
-anchor_bottom = 0.276543
-offset_right = -0.264099
-offset_bottom = -0.200012
-grow_horizontal = 2
+[node name="Opciones" type="Label" parent="Opciones/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 60
-text = "Opciones"
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "            Opciones"
 metadata/_edit_use_anchors_ = true
 
-[node name="Resolucion" type="Button" parent="Opciones"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0624962
-anchor_top = 0.308253
-anchor_right = 0.28
-anchor_bottom = 0.432
-offset_left = -1.99562
-offset_top = 0.25206
-offset_right = -0.559998
-offset_bottom = 0.0639954
-grow_horizontal = 2
-grow_vertical = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="Opciones/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+
+[node name="Resolucion" type="Button" parent="Opciones/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
-text = "Resolucion"
+text = "  Resolucion "
 metadata/_edit_use_anchors_ = true
 
-[node name="Sonido" type="Button" parent="Opciones"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.0624962
-anchor_top = 0.54
-anchor_right = 0.243
-anchor_bottom = 0.664
-offset_left = -1.99562
-offset_top = 0.0799866
-offset_right = 0.0639954
-offset_bottom = -0.272034
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Sonido" type="Button" parent="Opciones/VBoxContainer2/VBoxContainer"]
+layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
 text = "Sonido"
 metadata/_edit_use_anchors_ = true
 
@@ -178,77 +143,52 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
 
-[node name="AtrasSonido" type="Button" parent="Sonido"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Sonido"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.043
-anchor_top = 0.108
-anchor_right = 0.113
-anchor_bottom = 0.231
-offset_left = 0.464043
-offset_top = 0.0159988
-offset_right = -0.175964
-offset_bottom = 0.312012
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
-text = "<"
-metadata/_edit_use_anchors_ = true
-
-[node name="Sonido" type="Label" parent="Sonido"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.243056
-anchor_top = 0.108025
-anchor_right = 0.741549
-anchor_bottom = 0.276543
-offset_right = -0.264099
-offset_bottom = -0.200012
-grow_horizontal = 2
-theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 60
-text = "Sonido"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="MarginContainer" type="MarginContainer" parent="Sonido"]
-custom_minimum_size = Vector2(0, 50)
-layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
+anchors_preset = 15
 anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = 481.0
-offset_top = -68.0
-offset_right = -504.0
-offset_bottom = 25.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Sonido/MarginContainer"]
-custom_minimum_size = Vector2(200, 100)
+[node name="HBoxContainer2" type="HBoxContainer" parent="Sonido/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 100
 
-[node name="Opciones" type="Label" parent="Sonido/MarginContainer/HBoxContainer"]
+[node name="AtrasSonido" type="Button" parent="Sonido/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 60
+text = " < "
+metadata/_edit_use_anchors_ = true
+
+[node name="Sonido" type="Label" parent="Sonido/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("1_rye18")
+text = "              Sonido"
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Sonido/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/separation = 50
+
+[node name="Opciones" type="Label" parent="Sonido/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_rye18")
 text = "Volumen"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Volumen" type="HSlider" parent="Sonido/MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(600, 0)
+[node name="Volumen" type="HSlider" parent="Sonido/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_vertical = 1
 min_value = -80.0
 max_value = 6.0
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sonido/MarginContainer/HBoxContainer/Volumen"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Sonido/VBoxContainer/HBoxContainer/Volumen"]
 stream = ExtResource("3_uitcx")
 autoplay = true
 parameters/looping = false
@@ -264,76 +204,46 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_6ee3l")
 
-[node name="AtrasResolucion" type="Button" parent="Resolucion"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Resolucion"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.043
-anchor_top = 0.108
-anchor_right = 0.113
-anchor_bottom = 0.231
-offset_left = 0.464043
-offset_top = 0.0159988
-offset_right = -0.175964
-offset_bottom = 0.312012
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Resolucion/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="AtrasResolucion" type="Button" parent="Resolucion/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 40
-text = "<"
+text = " < "
 metadata/_edit_use_anchors_ = true
 
-[node name="Resolicion" type="Label" parent="Resolucion"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.243056
-anchor_top = 0.108025
-anchor_right = 0.741549
-anchor_bottom = 0.276543
-offset_right = -0.264099
-offset_bottom = -0.200012
-grow_horizontal = 2
+[node name="Resolicion" type="Label" parent="Resolucion/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 60
-text = "Resolucion"
+text = "             Resolucion"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="MarginContainer" type="MarginContainer" parent="Resolucion"]
-custom_minimum_size = Vector2(0, 50)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -437.5
-offset_top = -125.0
-offset_right = 437.5
-offset_bottom = 125.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Resolucion/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Resolucion/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 50
+size_flags_horizontal = 4
+size_flags_vertical = 6
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Resolucion/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 100)
-layout_mode = 2
-theme_override_constants/separation = 100
-
-[node name="Resoluciones2" type="Label" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Resoluciones2" type="Label" parent="Resolucion/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 60
 text = "Resoluciones"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Resoluciones" type="OptionButton" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(400, 0)
+[node name="Resoluciones" type="OptionButton" parent="Resolucion/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 selected = 2
 fit_to_longest_item = false
@@ -344,22 +254,20 @@ popup/item_1/id = 1
 popup/item_2/text = "1280x720"
 popup/item_2/id = 2
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="Resolucion/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 100)
+[node name="HBoxContainer2" type="HBoxContainer" parent="Resolucion/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 100
+size_flags_horizontal = 4
+size_flags_vertical = 2
 
-[node name="Modo de pantalla" type="Label" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="Modo de pantalla" type="Label" parent="Resolucion/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 60
 text = "Modo de pantalla"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Modo de pantalla elegir" type="OptionButton" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(400, 0)
+[node name="Modo de pantalla elegir" type="OptionButton" parent="Resolucion/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 selected = 0
 fit_to_longest_item = false
@@ -370,33 +278,25 @@ popup/item_1/id = 1
 popup/item_2/text = "Fullscreen"
 popup/item_2/id = 2
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="Resolucion/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(200, 100)
+[node name="HBoxContainer3" type="HBoxContainer" parent="Resolucion/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 100
+size_flags_horizontal = 4
+size_flags_vertical = 2
 
-[node name="Borderless" type="Label" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer3"]
+[node name="Borderless elegir" type="CheckBox" parent="Resolucion/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 theme = ExtResource("1_rye18")
-theme_override_font_sizes/font_size = 60
 text = "Borderless"
-horizontal_alignment = 1
-vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
-
-[node name="Borderless elegir" type="CheckBox" parent="Resolucion/MarginContainer/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(100, 0)
-layout_mode = 2
 
 [connection signal="pressed" from="Menu Principal/VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="Menu Principal/VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="Menu Principal/VBoxContainer/Salir" to="." method="_on_salir_pressed"]
-[connection signal="pressed" from="Opciones/Atras" to="." method="_on_atras_pressed"]
-[connection signal="pressed" from="Opciones/Resolucion" to="." method="_on_resolucion_pressed"]
-[connection signal="pressed" from="Opciones/Sonido" to="." method="_on_sonido_pressed"]
-[connection signal="pressed" from="Sonido/AtrasSonido" to="." method="_on_atras_sonido_pressed"]
-[connection signal="value_changed" from="Sonido/MarginContainer/HBoxContainer/Volumen" to="." method="_on_volumen_value_changed"]
-[connection signal="pressed" from="Resolucion/AtrasResolucion" to="." method="_on_atras_resolucion_pressed"]
-[connection signal="item_selected" from="Resolucion/MarginContainer/VBoxContainer/HBoxContainer/Resoluciones" to="." method="_on_resoluciones_item_selected"]
-[connection signal="item_selected" from="Resolucion/MarginContainer/VBoxContainer/HBoxContainer2/Modo de pantalla elegir" to="." method="_on_modo_de_pantalla_elegir_item_selected"]
-[connection signal="toggled" from="Resolucion/MarginContainer/VBoxContainer/HBoxContainer3/Borderless elegir" to="." method="_on_borderless_elegir_toggled"]
+[connection signal="pressed" from="Opciones/VBoxContainer2/HBoxContainer/Atras" to="." method="_on_atras_pressed"]
+[connection signal="pressed" from="Opciones/VBoxContainer2/VBoxContainer/Resolucion" to="." method="_on_resolucion_pressed"]
+[connection signal="pressed" from="Opciones/VBoxContainer2/VBoxContainer/Sonido" to="." method="_on_sonido_pressed"]
+[connection signal="pressed" from="Sonido/VBoxContainer/HBoxContainer2/AtrasSonido" to="." method="_on_atras_sonido_pressed"]
+[connection signal="value_changed" from="Sonido/VBoxContainer/HBoxContainer/Volumen" to="." method="_on_volumen_value_changed"]
+[connection signal="pressed" from="Resolucion/VBoxContainer/HBoxContainer4/AtrasResolucion" to="." method="_on_atras_resolucion_pressed"]
+[connection signal="item_selected" from="Resolucion/VBoxContainer/HBoxContainer/Resoluciones" to="." method="_on_resoluciones_item_selected"]
+[connection signal="item_selected" from="Resolucion/VBoxContainer/HBoxContainer2/Modo de pantalla elegir" to="." method="_on_modo_de_pantalla_elegir_item_selected"]
+[connection signal="toggled" from="Resolucion/VBoxContainer/HBoxContainer3/Borderless elegir" to="." method="_on_borderless_elegir_toggled"]

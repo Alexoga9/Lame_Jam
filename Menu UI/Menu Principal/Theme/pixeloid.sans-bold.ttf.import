@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cqudklsn55or5"
-path="res://.godot/imported/Star Cartoon.otf-ea716f07147a7cb475aa1714012a0514.fontdata"
+uid="uid://yhoi0m6vfyms"
+path="res://.godot/imported/pixeloid.sans-bold.ttf-e56163a020dceccca37ab4c365d2cd6a.fontdata"
 
 [deps]
 
-source_file="res://Menu UI/Menu Principal/Theme/Star Cartoon.otf"
-dest_files=["res://.godot/imported/Star Cartoon.otf-ea716f07147a7cb475aa1714012a0514.fontdata"]
+source_file="res://Menu UI/Menu Principal/Theme/pixeloid.sans-bold.ttf"
+dest_files=["res://.godot/imported/pixeloid.sans-bold.ttf-e56163a020dceccca37ab4c365d2cd6a.fontdata"]
 
 [params]
 
