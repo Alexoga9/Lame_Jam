@@ -6,6 +6,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tbvex"]
 size = Vector2(11, 14)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdgn8"]
+atlas = ExtResource("1_jx5m1")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ww5au"]
+atlas = ExtResource("1_jx5m1")
+region = Rect2(48, 0, 16, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_51kx3"]
 atlas = ExtResource("1_jx5m1")
 region = Rect2(0, 16, 16, 16)
@@ -38,16 +46,19 @@ region = Rect2(0, 0, 16, 16)
 atlas = ExtResource("1_jx5m1")
 region = Rect2(16, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bgvqd"]
-atlas = ExtResource("1_jx5m1")
-region = Rect2(32, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ftebv"]
-atlas = ExtResource("1_jx5m1")
-region = Rect2(48, 0, 16, 16)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_n2bdi"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdgn8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ww5au")
+}],
+"loop": true,
+"name": &"Caida",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_51kx3")
@@ -82,12 +93,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_yyces")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bgvqd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ftebv")
 }],
 "loop": true,
 "name": &"Saltar",
@@ -101,7 +106,8 @@ script = ExtResource("1_w6ivw")
 position = Vector2(-0.5, 1)
 shape = SubResource("RectangleShape2D_tbvex")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Animacion" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_n2bdi")
 animation = &"Idle"
-frame_progress = 0.478893
+frame_progress = 0.213507

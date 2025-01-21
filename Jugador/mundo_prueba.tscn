@@ -15,7 +15,7 @@ gradient = SubResource("Gradient_lissy")
 [node name="Mundo prueba" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(968, 1061)
+position = Vector2(131, 170)
 physics_material_override = SubResource("PhysicsMaterial_jg4g2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
@@ -27,4 +27,5 @@ scale = Vector2(29.625, 0.171875)
 texture = SubResource("GradientTexture2D_avi2x")
 
 [node name="Bubblemancer" parent="." instance=ExtResource("1_e26fo")]
-position = Vector2(131, 84)
+velocidad = 100.0
+salto = -400.0
