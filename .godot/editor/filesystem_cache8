@@ -1,10 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737424473
+::res://::1737467390
 icon.webp::CompressedTexture2D::7599764842350834070::1737416430::1737416430::1::::<><>::
-::res://Menu UI/::1737424627
+::res://Jugador/::1737467570
+Jugador-Sheet.png::CompressedTexture2D::9076563809014117825::1737467570::1737467571::1::::<><>::
+::res://Menu UI/::1737424644
 default_bus_layout.tres::AudioBusLayout::2177657045733173192::1737415481::0::1::::<><>::
 personaje.gd::GDScript::-1::1737415481::0::1::::<>CharacterBody2D<>::
-pausa.tscn::PackedScene::8369259998007357537::1737424627::0::1::::<><>::res://Menu UI/Pausa/MenuPausa.gd
 ::res://Menu UI/Menu assets/::1737415482
 please-calm-my-mind.mp3::AudioStreamMP3::3244109325977163205::1737415481::1737415482::1::::<><>::
 ::res://Menu UI/Menu Principal/::1737424616
@@ -17,5 +18,6 @@ theme_menu_principal.tres::Theme::3834976825338156914::1737424440::0::1::::<><>:
 background.tscn::PackedScene::7119609307106430150::1737415481::0::1::::<><>::
 character_body_2d.tscn::PackedScene::9125011615849549166::1737415481::0::1::::<><>::uid://botn8c71j63iu::::res://icon.svg
 mundo.tscn::PackedScene::8617677273958041321::1737415481::0::1::::<><>::uid://c8o16poetryug::::res://Menu UI/Mundo/background.tscn<>uid://d3ahuxaa5sv2u::::res://Menu UI/Mundo/character_body_2d.tscn
-::res://Menu UI/Pausa/::1737424424
+::res://Menu UI/Pausa/::1737424644
 MenuPausa.gd::GDScript::-1::1737424424::0::1::::<>Node<>::
+pausa.tscn::PackedScene::8369259998007357537::1737424627::0::1::::<><>::res://Menu UI/Pausa/MenuPausa.gd

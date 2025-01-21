@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://btiycbts4icfn"]
+
+[ext_resource type="PackedScene" uid="uid://7slf76pp6ve8" path="res://Jugador/bubblemancer.tscn" id="1_e26fo"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jg4g2"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_snanv"]
+
+[sub_resource type="Gradient" id="Gradient_lissy"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_avi2x"]
+gradient = SubResource("Gradient_lissy")
+
+[node name="Mundo prueba" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(968, 1061)
+physics_material_override = SubResource("PhysicsMaterial_jg4g2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_snanv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, 5.5)
+scale = Vector2(29.625, 0.171875)
+texture = SubResource("GradientTexture2D_avi2x")
+
+[node name="Bubblemancer" parent="." instance=ExtResource("1_e26fo")]
+position = Vector2(131, 84)
