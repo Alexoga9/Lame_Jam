@@ -27,5 +27,6 @@ scale = Vector2(29.625, 0.171875)
 texture = SubResource("GradientTexture2D_avi2x")
 
 [node name="Bubblemancer" parent="." instance=ExtResource("1_e26fo")]
+position = Vector2(136, 24)
 velocidad = 100.0
 salto = -400.0
