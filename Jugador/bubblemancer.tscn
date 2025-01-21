@@ -110,4 +110,4 @@ shape = SubResource("RectangleShape2D_tbvex")
 unique_name_in_owner = true
 sprite_frames = SubResource("SpriteFrames_n2bdi")
 animation = &"Idle"
-frame_progress = 0.844291
+frame_progress = 0.930306

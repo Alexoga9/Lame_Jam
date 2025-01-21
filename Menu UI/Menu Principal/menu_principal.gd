@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_jugar_pressed():
-	get_tree().change_scene_to_file("res://Mundo/mundo.tscn")
+	get_tree().change_scene_to_file("res://Jugador/mundo_prueba.tscn")
 
 
 func _on_opciones_pressed():
