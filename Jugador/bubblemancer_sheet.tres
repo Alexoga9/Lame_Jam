@@ -1,6 +1,15 @@
-[gd_resource type="SpriteFrames" load_steps=12 format=3 uid="uid://bjktw8janm542"]
+[gd_resource type="SpriteFrames" load_steps=18 format=3 uid="uid://bjktw8janm542"]
 
 [ext_resource type="Texture2D" uid="uid://d2k0xd5d3l0oj" path="res://Jugador/Jugador-Sheet.png" id="1_6nnwo"]
+[ext_resource type="Texture2D" uid="uid://c4k5hykxls77u" path="res://Jugador/BubbleSheet.png" id="1_c1x0r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mwkmi"]
+atlas = ExtResource("1_c1x0r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vq8j3"]
+atlas = ExtResource("1_c1x0r")
+region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdgn8"]
 atlas = ExtResource("1_6nnwo")
@@ -10,13 +19,25 @@ region = Rect2(32, 0, 16, 16)
 atlas = ExtResource("1_6nnwo")
 region = Rect2(48, 0, 16, 16)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_51kx3"]
-atlas = ExtResource("1_6nnwo")
-region = Rect2(0, 16, 16, 16)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_l1lnt"]
 atlas = ExtResource("1_6nnwo")
 region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5ho1"]
+atlas = ExtResource("1_6nnwo")
+region = Rect2(0, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wghi"]
+atlas = ExtResource("1_6nnwo")
+region = Rect2(16, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qnwqy"]
+atlas = ExtResource("1_6nnwo")
+region = Rect2(32, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f3ii1"]
+atlas = ExtResource("1_6nnwo")
+region = Rect2(48, 32, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_87r6g"]
 atlas = ExtResource("1_6nnwo")
@@ -46,6 +67,17 @@ region = Rect2(16, 0, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_mwkmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vq8j3")
+}],
+"loop": true,
+"name": &"Bubble",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_kdgn8")
 }, {
 "duration": 1.0,
@@ -57,10 +89,19 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_51kx3")
+"texture": SubResource("AtlasTexture_l1lnt")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_l1lnt")
+"texture": SubResource("AtlasTexture_f5ho1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wghi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qnwqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f3ii1")
 }],
 "loop": true,
 "name": &"Caminar",

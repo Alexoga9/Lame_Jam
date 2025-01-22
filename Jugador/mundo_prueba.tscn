@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://btiycbts4icfn"]
+[gd_scene load_steps=8 format=3 uid="uid://btiycbts4icfn"]
 
 [ext_resource type="PackedScene" uid="uid://7slf76pp6ve8" path="res://Jugador/bubblemancer.tscn" id="1_e26fo"]
 [ext_resource type="PackedScene" uid="uid://drieqv0q3qej6" path="res://Menu UI/Pausa/pausa.tscn" id="2_pdgpf"]
+[ext_resource type="PackedScene" uid="uid://lbch5jcvkc38" path="res://Jugador/bubblemancerG2.tscn" id="2_rbg81"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jg4g2"]
 
@@ -34,3 +35,8 @@ salto = -400.0
 
 [node name="Pausa" parent="." instance=ExtResource("2_pdgpf")]
 visible = false
+
+[node name="Bubblemancer2" parent="." instance=ExtResource("2_rbg81")]
+position = Vector2(43, 23)
+velocidad = 100.0
+salto = -400.0
