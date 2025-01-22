@@ -14,8 +14,7 @@ func _physics_process(delta):
 	girar_personaje_al_moverse()
 	saltar(delta)
 	actualizacion_de_animaciones()
-	
-	cambio()
+	cambio_de_skin()
 	
 	move_and_slide()
 
@@ -52,6 +51,6 @@ func actualizacion_de_animaciones():
 	else:
 		animacion.play("Idle")
 
-func cambio():
+func cambio_de_skin():
 	if Input.is_action_pressed("mover_arriba"):
 		%Animacion.sprite_frames = textura2
