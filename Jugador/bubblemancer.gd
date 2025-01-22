@@ -7,12 +7,15 @@ extends CharacterBody2D
 
 var mirando_derecha = true
 var gravedad = ProjectSettings.get_setting("physics/2d/default_gravity")
+var textura2 = preload("res://Jugador/Bubble_sheet.tres")
 
 func _physics_process(delta):
 	mover_x()
 	girar_personaje_al_moverse()
 	saltar(delta)
 	actualizacion_de_animaciones()
+	
+	cambio()
 	
 	move_and_slide()
 
@@ -48,3 +51,7 @@ func actualizacion_de_animaciones():
 		animacion.play("Caminar")
 	else:
 		animacion.play("Idle")
+
+func cambio():
+	if Input.is_action_pressed("mover_arriba"):
+		%Animacion.sprite_frames = textura2
