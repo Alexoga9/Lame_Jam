@@ -91,3 +91,5 @@ frame_progress = 0.584027
 libraries = {
 "": SubResource("AnimationLibrary_f1igf")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
