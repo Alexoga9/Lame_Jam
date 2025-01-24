@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy3a76gv8onru"]
+
+[ext_resource type="Script" path="res://Scenas/Triggers/Ganar/area_de_victoria.gd" id="1_ei70d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_luta5"]
+
+[node name="Area de victoria" type="Area2D"]
+script = ExtResource("1_ei70d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_luta5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

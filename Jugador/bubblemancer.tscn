@@ -7,6 +7,7 @@
 size = Vector2(11, 14)
 
 [node name="Bubblemancer" type="CharacterBody2D"]
+disable_mode = 2
 script = ExtResource("1_w6ivw")
 
 [node name="Animacion" type="AnimatedSprite2D" parent="."]
