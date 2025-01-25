@@ -77,7 +77,7 @@ _data = {
 collision_layer = 2
 script = ExtResource("1_c5jt8")
 velocidad = 100.0
-salto = 400.0
+salto = -400.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1)
@@ -94,5 +94,3 @@ frame_progress = 0.584027
 libraries = {
 "": SubResource("AnimationLibrary_f1igf")
 }
-
-[node name="Camera2D" type="Camera2D" parent="."]
