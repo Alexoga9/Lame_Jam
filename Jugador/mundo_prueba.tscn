@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://7slf76pp6ve8" path="res://Jugador/bubblemancer.tscn" id="1_e26fo"]
 [ext_resource type="PackedScene" uid="uid://drieqv0q3qej6" path="res://Menu UI/Pausa/pausa.tscn" id="2_pdgpf"]
-[ext_resource type="PackedScene" path="res://Jugador/bubblemancerG2.tscn" id="2_rbg81"]
+[ext_resource type="PackedScene" uid="uid://54f82birtyi0" path="res://Jugador/bubblemancerG2.tscn" id="2_rbg81"]
 [ext_resource type="TileSet" uid="uid://dnvdwguuor46w" path="res://Scenas/new_tile_set.tres" id="4_0faux"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jg4g2"]

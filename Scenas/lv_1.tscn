@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=4 uid="uid://t8xhbfrbjwsu"]
 
-[ext_resource type="PackedScene" uid="uid://7slf76pp6ve8" path="res://Jugador/bubblemancer.tscn" id="1_3o6ub"]
 [ext_resource type="Texture2D" uid="uid://bupu41tp52h7g" path="res://Assets/Sprite/TileSet ideas.png" id="2_xek83"]
 [ext_resource type="PackedScene" uid="uid://be3u1fixawhu6" path="res://Scenas/particulas_del_portal.tscn" id="3_kjlxf"]
 [ext_resource type="PackedScene" uid="uid://dy3a76gv8onru" path="res://Scenas/Triggers/Ganar/area_de_victoria.tscn" id="4_ncqcs"]
 [ext_resource type="PackedScene" uid="uid://b4uyxgfgxgtli" path="res://Scenas/Triggers/Ganar/pantalla_de_victoria.tscn" id="5_74xvu"]
+[ext_resource type="PackedScene" uid="uid://54f82birtyi0" path="res://Jugador/bubblemancerG2.tscn" id="5_bo2m8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ws2us"]
 texture = ExtResource("2_xek83")
@@ -57,11 +57,7 @@ tile_map_data = PackedByteArray("AAAAAAsAAAAIAAAAAAAAAAoAAAAIAAAAAAABAAoAAAAIAAA
 tile_set = SubResource("TileSet_hf0yk")
 
 [node name="Pantalla de victoria" parent="." instance=ExtResource("5_74xvu")]
-
-[node name="Bubblemancer" parent="." instance=ExtResource("1_3o6ub")]
-position = Vector2(11, 150)
-velocidad = 100.0
-salto = -100.0
+visible = false
 
 [node name="Particulas del portal" parent="." instance=ExtResource("3_kjlxf")]
 position = Vector2(279, 138)
@@ -69,3 +65,6 @@ position = Vector2(279, 138)
 [node name="Area de victoria" parent="." node_paths=PackedStringArray("pantalla") instance=ExtResource("4_ncqcs")]
 position = Vector2(281, 150)
 pantalla = NodePath("../Pantalla de victoria")
+
+[node name="Bubblemancer" parent="." instance=ExtResource("5_bo2m8")]
+position = Vector2(10, 151)

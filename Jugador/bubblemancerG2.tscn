@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://lbch5jcvkc38"]
+[gd_scene load_steps=8 format=3 uid="uid://54f82birtyi0"]
 
 [ext_resource type="Script" path="res://Jugador/bubblemancerG2.gd" id="1_c5jt8"]
 [ext_resource type="SpriteFrames" uid="uid://bjktw8janm542" path="res://Jugador/bubblemancer_sheet.tres" id="2_vhpm8"]
@@ -75,6 +75,8 @@ _data = {
 
 [node name="Bubblemancer" type="CharacterBody2D"]
 script = ExtResource("1_c5jt8")
+velocidad = 100.0
+salto = 400.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1)
