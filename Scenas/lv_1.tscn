@@ -56,15 +56,18 @@ sources/0 = SubResource("TileSetAtlasSource_ws2us")
 tile_map_data = PackedByteArray("AAAAAAsAAAAIAAAAAAAAAAoAAAAIAAAAAAABAAoAAAAIAAAAAAACAAoAAAAIAAAAAAADAAoAAAAIAAAAAAAEAAoAAAAIAAAAAAAFAAoAAAAIAAAAAAAGAAoAAAAIAAAAAAAHAAoAAAAIAAAAAAAIAAoAAAAIAAAAAAAJAAoAAAAIAAAAAAAKAAoAAAAIAAAAAAALAAoAAAAIAAAAAAAMAAoAAAAIAAAAAAANAAoAAAAIAAAAAAAOAAoAAAAIAAAAAAAPAAoAAAAIAAAAAAAQAAoAAAAIAAAAAAARAAoAAAAIAAAAAAASAAoAAAAIAAAAAAATAAoAAAAIAAAAAAABAAsAAAAIAAAAAAACAAsAAAAIAAAAAAADAAsAAAAIAAAAAAAEAAsAAAAIAAAAAAAFAAsAAAAIAAAAAAAGAAsAAAAIAAAAAAAHAAsAAAAIAAAAAAAIAAsAAAAIAAAAAAAJAAsAAAAIAAAAAAAKAAsAAAAIAAAAAAALAAsAAAAIAAAAAAAMAAsAAAAIAAAAAAANAAsAAAAIAAAAAAAOAAsAAAAIAAAAAAAPAAsAAAAIAAAAAAAQAAsAAAAIAAAAAAARAAsAAAAIAAAAAAASAAsAAAAIAAAAAAATAAsAAAAIAAAAAAAQAAgAAAAAAAMAAAAQAAkAAAAAAAQAAAARAAgAAAABAAMAAAARAAkAAAABAAQAAAASAAgAAAACAAMAAAASAAkAAAACAAQAAAA=")
 tile_set = SubResource("TileSet_hf0yk")
 
-[node name="Pantalla de victoria" parent="." instance=ExtResource("5_74xvu")]
-visible = false
-
 [node name="Particulas del portal" parent="." instance=ExtResource("3_kjlxf")]
 position = Vector2(279, 138)
 
 [node name="Area de victoria" parent="." node_paths=PackedStringArray("pantalla") instance=ExtResource("4_ncqcs")]
 position = Vector2(281, 150)
-pantalla = NodePath("../Pantalla de victoria")
+pantalla = NodePath("../CanvasLayer/Pantalla de victoria")
 
 [node name="Bubblemancer" parent="." instance=ExtResource("5_bo2m8")]
 position = Vector2(10, 151)
+salto = -400.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Pantalla de victoria" parent="CanvasLayer" instance=ExtResource("5_74xvu")]
+visible = false

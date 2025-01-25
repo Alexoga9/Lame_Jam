@@ -74,6 +74,7 @@ _data = {
 }
 
 [node name="Bubblemancer" type="CharacterBody2D"]
+collision_layer = 2
 script = ExtResource("1_c5jt8")
 velocidad = 100.0
 salto = 400.0
