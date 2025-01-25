@@ -5,6 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_luta5"]
 
 [node name="Area de victoria" type="Area2D"]
+collision_mask = 2
 script = ExtResource("1_ei70d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

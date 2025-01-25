@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4uyxgfgxgtli"]
+
+[ext_resource type="Script" path="res://Scenas/Triggers/Ganar/pantalla_de_victoria.gd" id="1_wd3d1"]
+[ext_resource type="Theme" uid="uid://buvxrjjcletgk" path="res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres" id="2_xa3xv"]
+
+[node name="Pantalla de victoria" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wd3d1")
+siguiente_nivel = "res://Jugador/mundo_prueba.tscn"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.683
+anchor_right = 0.5
+anchor_bottom = 0.683
+offset_left = -62.5
+offset_top = -65.94
+offset_right = 62.5
+offset_bottom = 0.0599976
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Siguiente nivel" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_xa3xv")
+text = " Siguiente nivel "
+
+[node name="Menu principal" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_xa3xv")
+text = " Menu principal "
+
+[connection signal="pressed" from="VBoxContainer/Siguiente nivel" to="." method="_on_siguiente_nivel_pressed"]
+[connection signal="pressed" from="VBoxContainer/Menu principal" to="." method="_on_menu_principal_pressed"]
