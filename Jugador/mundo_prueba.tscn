@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://btiycbts4icfn"]
+[gd_scene load_steps=10 format=4 uid="uid://btiycbts4icfn"]
 
 [ext_resource type="PackedScene" uid="uid://7slf76pp6ve8" path="res://Jugador/bubblemancer.tscn" id="1_e26fo"]
 [ext_resource type="PackedScene" uid="uid://drieqv0q3qej6" path="res://Menu UI/Pausa/pausa.tscn" id="2_pdgpf"]
 [ext_resource type="PackedScene" uid="uid://54f82birtyi0" path="res://Jugador/bubblemancerG2.tscn" id="2_rbg81"]
 [ext_resource type="TileSet" uid="uid://dnvdwguuor46w" path="res://Scenas/new_tile_set.tres" id="4_0faux"]
+[ext_resource type="PackedScene" uid="uid://bwiee7akhd6ug" path="res://Scenas/Elementos/aire.tscn" id="5_wdekw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jg4g2"]
 
@@ -39,8 +40,10 @@ visible = false
 
 [node name="Bubblemancer2" parent="." instance=ExtResource("2_rbg81")]
 position = Vector2(43, 23)
-salto = -400.0
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAACAAMAAAABAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAEAAAAAAAUAAAAAAAIAAAABAAMAAAABAAAAAAABAAQAAAABAAEAAAABAAUAAAABAAIAAAACAAQAAAABAAEAAAACAAUAAAABAAIAAAADAAMAAAABAAAAAAADAAQAAAABAAEAAAADAAUAAAABAAIAAAAEAAMAAAABAAAAAAAEAAQAAAABAAEAAAAEAAUAAAABAAIAAAAFAAMAAAABAAAAAAAFAAQAAAABAAEAAAAFAAUAAAABAAIAAAAGAAMAAAABAAAAAAAGAAQAAAABAAEAAAAGAAUAAAABAAIAAAAHAAMAAAABAAAAAAAHAAQAAAABAAEAAAAHAAUAAAABAAIAAAAIAAMAAAABAAAAAAAIAAQAAAABAAEAAAAIAAUAAAABAAIAAAAJAAMAAAABAAAAAAAJAAQAAAABAAEAAAAJAAUAAAABAAIAAAAKAAMAAAACAAAAAAAKAAQAAAACAAEAAAAKAAUAAAACAAIAAAANAAMAAAAAAAQAAAAOAAMAAAABAAQAAAAPAAMAAAACAAQAAAATAAIAAAAAAAQAAAAUAAIAAAABAAQAAAAVAAIAAAACAAQAAAAcAAMAAAAAAAQAAAAdAAMAAAABAAQAAAAeAAMAAAACAAQAAAAlAAMAAAAAAAQAAAAmAAMAAAABAAQAAAAnAAMAAAACAAQAAAAYAAMAAAAEAAQAAAAgAAQAAAAEAAQAAAA=")
 tile_set = ExtResource("4_0faux")
+
+[node name="Aire" parent="." instance=ExtResource("5_wdekw")]
+position = Vector2(194, 159)

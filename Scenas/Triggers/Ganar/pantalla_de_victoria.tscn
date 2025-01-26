@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4uyxgfgxgtli"]
+[gd_scene load_steps=3 format=3 uid="uid://vpoa80tohfgi"]
 
 [ext_resource type="Script" path="res://Scenas/Triggers/Ganar/pantalla_de_victoria.gd" id="1_wd3d1"]
 [ext_resource type="Theme" uid="uid://buvxrjjcletgk" path="res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres" id="2_xa3xv"]

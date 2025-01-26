@@ -1,46 +1,51 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737844724
-icon.webp::CompressedTexture2D::7599764842350834070::1737416430::1737416430::1::::<><>::
-::res://Assets/::1737731731
-::res://Assets/Sprite/::1737733590
-BubbleSheet.png::CompressedTexture2D::5919780689310971515::1737731731::1737731738::1::::<><>::
-BubbleSimple.png::CompressedTexture2D::7015226965419753606::1737731731::1737731738::1::::<><>::
-SpikeGround.png::CompressedTexture2D::5590062581964545744::1737731731::1737731738::1::::<><>::
-Spikemancer.png::CompressedTexture2D::5868072390215909333::1737731731::1737731738::1::::<><>::
-SpikeProyectile.png::CompressedTexture2D::4912457296508575787::1737731731::1737731738::1::::<><>::
-TileSet ideas.png::CompressedTexture2D::3822430746324296122::1737733590::1737733590::1::::<><>::
-Tileset.png::CompressedTexture2D::8632767001741561033::1737731731::1737731738::1::::<><>::
-::res://Jugador/::1737735537
-bubblemancer.gd::GDScript::-1::1737551657::0::1::::<>CharacterBody2D<>::
-bubblemancer.tscn::PackedScene::2283880341219028613::1737735537::0::1::::<><>::res://Jugador/bubblemancer.gd<>uid://bjktw8janm542::::res://Jugador/bubblemancer_sheet.tres
-bubblemancerG2.gd::GDScript::-1::1737731731::0::1::::<>CharacterBody2D<>::
-bubblemancerG2.tscn::PackedScene::-1::1737731731::0::1::::<><>::
-bubblemancer_sheet.tres::SpriteFrames::3039958711496135005::1737731769::0::1::::<><>::uid://d2k0xd5d3l0oj::::res://Jugador/Jugador-Sheet.png<>uid://c4k5hykxls77u::::res://Jugador/BubbleSheet.png
-BubbleSheet.png::CompressedTexture2D::6830796897838974836::1737731731::1737731738::1::::<><>::
-BubbleSimple.png::CompressedTexture2D::2682999291778080655::1737731731::1737731738::1::::<><>::
-Bubble_sheet.tres::SpriteFrames::4724204463962209554::1737731769::0::1::::<><>::uid://b1wyiu0obf4y7::::res://Jugador/Burbuja.png
-Burbuja.png::CompressedTexture2D::4258219512773668860::1737549754::1737549755::1::::<><>::
-Jugador-Sheet.png::CompressedTexture2D::9076563809014117825::1737467570::1737467571::1::::<><>::
-mundo_prueba.tscn::PackedScene::3737984596993941839::1737735537::0::1::::<><>::uid://7slf76pp6ve8::::res://Jugador/bubblemancer.tscn<>uid://drieqv0q3qej6::::res://Menu UI/Pausa/pausa.tscn<>res://Jugador/bubblemancerG2.tscn<>uid://dnvdwguuor46w::::res://Scenas/new_tile_set.tres
-::res://Menu UI/::1737474434
-default_bus_layout.tres::AudioBusLayout::2177657045733173192::1737415481::0::1::::<><>::
-::res://Menu UI/Menu assets/::1737415482
-please-calm-my-mind.mp3::AudioStreamMP3::3244109325977163205::1737415481::1737415482::1::::<><>::
-::res://Menu UI/Menu Principal/::1737735537
-menu_principal.gd::GDScript::-1::1737479312::0::1::::<>Control<>::
-menu_principal.tscn::PackedScene::5323707003753241877::1737735537::0::1::::<><>::res://Menu UI/Menu Principal/menu_principal.gd<>uid://buvxrjjcletgk::::res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres<>uid://bmhqahwr7ri82::::res://Menu UI/Menu assets/please-calm-my-mind.mp3
-::res://Menu UI/Menu Principal/Theme/::1737731769
-pixeloid.sans-bold.ttf::FontFile::1699848548899357794::1737474618::1737474618::1::::<><>::
-theme_menu_principal.tres::Theme::3834976825338156914::1737731769::0::1::::<><>::uid://yhoi0m6vfyms::::res://Menu UI/Menu Principal/Theme/pixeloid.sans-bold.ttf
-::res://Menu UI/Pausa/::1737735537
-MenuPausa.gd::GDScript::-1::1737480224::0::1::::<>Control<>::
-pausa.tscn::PackedScene::8369259998007357537::1737735537::0::1::::<><>::res://Menu UI/Pausa/MenuPausa.gd<>uid://buvxrjjcletgk::::res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres
-::res://Scenas/::1737735537
-lv_1.tscn::PackedScene::1403121547419041416::1737735537::0::1::::<><>::uid://7slf76pp6ve8::::res://Jugador/bubblemancer.tscn<>uid://bupu41tp52h7g::::res://Assets/Sprite/TileSet ideas.png<>uid://be3u1fixawhu6::::res://Scenas/particulas_del_portal.tscn<>uid://dy3a76gv8onru::::res://Scenas/Triggers/Ganar/area_de_victoria.tscn
-new_tile_set.tres::TileSet::8115290736617495696::1737731769::0::1::::<><>::uid://du81n8n8ymsfx::::res://Assets/Sprite/Tileset.png
-particulas_del_portal.tscn::PackedScene::2726239681876835187::1737734865::0::1::::<><>::
-tile_map.tscn::PackedScene::9119306790108450023::1737731731::0::1::::<><>::uid://du81n8n8ymsfx::::res://Assets/Sprite/Tileset.png
-::res://Scenas/Triggers/::1737735060
-::res://Scenas/Triggers/Ganar/::1737735612
-area_de_victoria.gd::GDScript::-1::1737735612::0::1::::<>Area2D<>::
-area_de_victoria.tscn::PackedScene::8901655659402200618::1737735612::0::1::::<><>::res://Scenas/Triggers/Ganar/area_de_victoria.gd
+::res://::1737855834
+icon.webp::CompressedTexture2D::7599764842350834070::1737570076::1737855836::1::::<><>::
+::res://Assets/::1737662958
+::res://Assets/Sprite/::1737847737
+BubbleSheet.png::CompressedTexture2D::5919780689310971515::1737663546::1737855836::1::::<><>::
+BubbleSimple.png::CompressedTexture2D::7015226965419753606::1737663540::1737855836::1::::<><>::
+SpikeGround.png::CompressedTexture2D::5590062581964545744::1737663532::1737855836::1::::<><>::
+Spikemancer.png::CompressedTexture2D::5868072390215909333::1737663525::1737855836::1::::<><>::
+SpikeProyectile.png::CompressedTexture2D::4912457296508575787::1737663516::1737855836::1::::<><>::
+TileSet ideas.png::CompressedTexture2D::3822430746324296122::1737830293::1737855836::1::::<><>::
+Tileset.png::CompressedTexture2D::8632767001741561033::1737671443::1737855836::1::::<><>::
+::res://Jugador/::1737851731
+bubblemancer.gd::GDScript::-1::1737581212::0::1::::<>CharacterBody2D<>::
+bubblemancer.tscn::PackedScene::2283880341219028613::1737851730::0::1::::<><>::res://Jugador/bubblemancer.gd<>uid://bjktw8janm542::::res://Jugador/bubblemancer_sheet.tres
+bubblemancerG2.gd::GDScript::-1::1737582102::0::1::::<>CharacterBody2D<>::
+bubblemancerG2.tscn::PackedScene::2165896200233633137::1737849236::0::1::::<><>::res://Jugador/bubblemancerG2.gd<>uid://bjktw8janm542::::res://Jugador/bubblemancer_sheet.tres
+bubblemancer_sheet.tres::SpriteFrames::3039958711496135005::1737847920::0::1::::<><>::uid://d2k0xd5d3l0oj::::res://Jugador/Jugador-Sheet.png<>uid://c4k5hykxls77u::::res://Jugador/BubbleSheet.png
+BubbleSheet.png::CompressedTexture2D::6830796897838974836::1737578854::1737855836::1::::<><>::
+BubbleSimple.png::CompressedTexture2D::2682999291778080655::1737572240::1737855836::1::::<><>::
+Bubble_sheet.tres::SpriteFrames::4724204463962209554::1737847920::0::1::::<><>::uid://b1wyiu0obf4y7::::res://Jugador/Burbuja.png
+Burbuja.png::CompressedTexture2D::4258219512773668860::1737570076::1737855836::1::::<><>::
+Jugador-Sheet.png::CompressedTexture2D::9076563809014117825::1737570076::1737855836::1::::<><>::
+mundo_prueba.tscn::PackedScene::3737984596993941839::1737851731::0::1::::<><>::uid://7slf76pp6ve8::::res://Jugador/bubblemancer.tscn<>uid://drieqv0q3qej6::::res://Menu UI/Pausa/pausa.tscn<>uid://lbch5jcvkc38::::res://Jugador/bubblemancerG2.tscn<>uid://dnvdwguuor46w::::res://Scenas/new_tile_set.tres<>uid://bwiee7akhd6ug::::res://Scenas/Elementos/aire.tscn
+::res://Menu UI/::1737570080
+default_bus_layout.tres::AudioBusLayout::2177657045733173192::1737570076::0::1::::<><>::
+::res://Menu UI/Menu assets/::1737847737
+please-calm-my-mind.mp3::AudioStreamMP3::3244109325977163205::1737570076::1737855836::1::::<><>::
+::res://Menu UI/Menu Principal/::1737851730
+menu_principal.gd::GDScript::-1::1737570076::0::1::::<>Control<>::
+menu_principal.tscn::PackedScene::5323707003753241877::1737851730::0::1::::<><>::res://Menu UI/Menu Principal/menu_principal.gd<>uid://buvxrjjcletgk::::res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres<>uid://bmhqahwr7ri82::::res://Menu UI/Menu assets/please-calm-my-mind.mp3
+::res://Menu UI/Menu Principal/Theme/::1737847920
+pixeloid.sans-bold.ttf::FontFile::1699848548899357794::1737570076::1737855835::1::::<><>::
+theme_menu_principal.tres::Theme::3834976825338156914::1737847920::0::1::::<><>::uid://yhoi0m6vfyms::::res://Menu UI/Menu Principal/Theme/pixeloid.sans-bold.ttf
+::res://Menu UI/Pausa/::1737851730
+MenuPausa.gd::GDScript::-1::1737570076::0::1::::<>Control<>::
+pausa.tscn::PackedScene::8369259998007357537::1737851730::0::1::::<><>::res://Menu UI/Pausa/MenuPausa.gd<>uid://buvxrjjcletgk::::res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres
+::res://Scenas/::1737851731
+lv_1.tscn::PackedScene::1403121547419041416::1737851731::0::1::::<><>::uid://bupu41tp52h7g::::res://Assets/Sprite/TileSet ideas.png<>uid://be3u1fixawhu6::::res://Scenas/particulas_del_portal.tscn<>uid://dy3a76gv8onru::::res://Scenas/Triggers/Ganar/area_de_victoria.tscn<>uid://vpoa80tohfgi::::res://Scenas/Triggers/Ganar/pantalla_de_victoria.tscn<>uid://lbch5jcvkc38::::res://Jugador/bubblemancerG2.tscn
+new_tile_set.tres::TileSet::8115290736617495696::1737847920::0::1::::<><>::uid://du81n8n8ymsfx::::res://Assets/Sprite/Tileset.png
+particulas_del_portal.tscn::PackedScene::2726239681876835187::1737830294::0::1::::<><>::
+tile_map.tscn::PackedScene::9119306790108450023::1737672728::0::1::::<><>::uid://du81n8n8ymsfx::::res://Assets/Sprite/Tileset.png
+::res://Scenas/Elementos/::1737853284
+aire.tscn::PackedScene::3947341958120044786::1737853284::0::1::::<><>::res://Scenas/Elementos/Impulso.gd
+Impulso.gd::GDScript::-1::1737851365::0::1::::<>Area2D<>::
+::res://Scenas/Triggers/::1737830301
+::res://Scenas/Triggers/Ganar/::1737851731
+area_de_victoria.gd::GDScript::-1::1737849236::0::1::::<>Area2D<>::
+area_de_victoria.tscn::PackedScene::8901655659402200618::1737851731::0::1::::<><>::res://Scenas/Triggers/Ganar/area_de_victoria.gd
+pantalla_de_victoria.gd::GDScript::-1::1737849236::0::1::::<>Control<>::
+pantalla_de_victoria.tscn::PackedScene::1505783193381235232::1737851731::0::1::::<><>::res://Scenas/Triggers/Ganar/pantalla_de_victoria.gd<>uid://buvxrjjcletgk::::res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres
