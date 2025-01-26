@@ -5,8 +5,11 @@ extends CharacterBody2D
 
 @export var velocidad: float
 @export var salto: float
+@export var flotabilidad: float
+@export var salto_burbijoide: float
 
 var gravedad = ProjectSettings.get_setting("physics/2d/default_gravity")
+var modo_burbuja = false
 
 
 func _physics_process(delta):
@@ -31,10 +34,14 @@ func girar_personaje_al_moverse():
 
 
 func saltar(delta):
-	if Input.is_action_just_pressed("saltar") and is_on_floor():
+	if Input.is_action_just_pressed("saltar") and is_on_floor() and not modo_burbuja:
+		velocity.y = salto
+	elif Input.is_action_just_pressed("saltar") and is_on_floor() and modo_burbuja:
 		velocity.y = salto
 	
-	if not is_on_floor():
+	if not is_on_floor() and modo_burbuja== true:
+		velocity.y += flotabilidad * delta
+	else:
 		velocity.y += gravedad * delta
 
 
@@ -55,5 +62,8 @@ func actualizacion_de_animaciones():
 
 func cambio_de_skin():
 	if Input.is_action_pressed("mover_arriba"):
+		modo_burbuja = true
 		animacion.play("Bubble")
 		Anim.play("Float")
+	else:
+		modo_burbuja = false
