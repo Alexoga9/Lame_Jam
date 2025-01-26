@@ -78,6 +78,7 @@ collision_layer = 2
 script = ExtResource("1_c5jt8")
 velocidad = 100.0
 salto = -400.0
+flotabilidad = 100.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1)
