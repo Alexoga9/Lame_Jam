@@ -77,8 +77,9 @@ _data = {
 collision_layer = 2
 script = ExtResource("1_c5jt8")
 velocidad = 100.0
-salto = -400.0
-flotabilidad = 100.0
+salto = -200.0
+flotabilidad = 25.0
+salto_burbijoide = -70.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1)
@@ -88,8 +89,6 @@ shape = SubResource("RectangleShape2D_tbvex")
 unique_name_in_owner = true
 sprite_frames = ExtResource("2_vhpm8")
 animation = &"Caminar"
-frame = 3
-frame_progress = 0.584027
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animacion"]
 libraries = {
