@@ -78,9 +78,15 @@ collision_layer = 2
 script = ExtResource("1_c5jt8")
 vida_maxima = 15
 velocidad = 100.0
+<<<<<<< Updated upstream
 salto = -200.0
 flotabilidad = -10.0
 salto_burbijoide = -20.0
+=======
+salto = -400.0
+flotabilidad = -0.02
+salto_burbijoide = -50.0
+>>>>>>> Stashed changes
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1)
