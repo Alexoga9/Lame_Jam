@@ -1,9 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwiee7akhd6ug"]
+[gd_scene load_steps=5 format=3 uid="uid://bwiee7akhd6ug"]
 
 [ext_resource type="Script" path="res://Scenas/Elementos/Impulso.gd" id="1_l8rn0"]
+[ext_resource type="Texture2D" uid="uid://bcl31uqv5r0h4" path="res://Assets/Sprite/hueco.png" id="2_p447x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgu63"]
 size = Vector2(20, 52)
+
+[sub_resource type="Gradient" id="Gradient_4p14o"]
+offsets = PackedFloat32Array(0.0111111, 1)
+colors = PackedColorArray(1, 1, 0.8, 0.235294, 1, 1, 1, 1)
 
 [node name="Aire" type="Node2D"]
 
@@ -20,5 +25,22 @@ shape = SubResource("RectangleShape2D_vgu63")
 [node name="RayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(0, -100)
 collision_mask = 3
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(0, 4)
+amount = 16
+lifetime = 1.5
+randomness = 0.06
+lifetime_randomness = 0.09
+direction = Vector2(0, -1)
+spread = 62.81
+gravity = Vector2(0, -160)
+initial_velocity_max = 92.59
+angular_velocity_max = 26.67
+color_ramp = SubResource("Gradient_4p14o")
+
+[node name="Hueco" type="Sprite2D" parent="."]
+position = Vector2(0, 2)
+texture = ExtResource("2_p447x")
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_area_body_entered"]

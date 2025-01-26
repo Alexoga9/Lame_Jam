@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ch33xadcdotmr"]
+[gd_scene load_steps=9 format=3 uid="uid://ch33xadcdotmr"]
 
 [ext_resource type="Script" path="res://Menu UI/Menu Principal/menu_principal.gd" id="1_20is8"]
 [ext_resource type="Theme" uid="uid://buvxrjjcletgk" path="res://Menu UI/Menu Principal/Theme/theme_menu_principal.tres" id="1_rye18"]
 [ext_resource type="AudioStream" uid="uid://bmhqahwr7ri82" path="res://Menu UI/Menu assets/please-calm-my-mind.mp3" id="3_uitcx"]
+[ext_resource type="Texture2D" uid="uid://c67h07ie5epy1" path="res://Assets/Sprite/BubbleSimple.png" id="4_152v1"]
+[ext_resource type="Texture2D" uid="uid://cqlt6ncbhay1x" path="res://Assets/Sprite/BubbleSheet.png" id="5_2oi36"]
 
 [sub_resource type="Gradient" id="Gradient_ltswk"]
 colors = PackedColorArray(0, 0.364706, 0.964706, 1, 1.06369e-05, 0.178469, 0.512199, 1)
@@ -52,7 +54,7 @@ alignment = 1
 [node name="Menu" type="Label" parent="Menu Principal/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_rye18")
-text = "Menu Principal"
+text = "Bubblemancer"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -287,6 +289,39 @@ size_flags_vertical = 2
 layout_mode = 2
 theme = ExtResource("1_rye18")
 text = "Borderless"
+
+[node name="BubbleSimple" type="Sprite2D" parent="."]
+position = Vector2(47, 24)
+scale = Vector2(2, 2)
+texture = ExtResource("4_152v1")
+
+[node name="BubbleSimple2" type="Sprite2D" parent="."]
+position = Vector2(59, 102)
+texture = ExtResource("4_152v1")
+
+[node name="BubbleSimple3" type="Sprite2D" parent="."]
+position = Vector2(131, 146)
+texture = ExtResource("4_152v1")
+
+[node name="BubbleSimple4" type="Sprite2D" parent="."]
+position = Vector2(291, 50)
+texture = ExtResource("4_152v1")
+
+[node name="BubbleSimple5" type="Sprite2D" parent="."]
+position = Vector2(264, 5)
+scale = Vector2(4, 4)
+texture = ExtResource("4_152v1")
+
+[node name="BubbleSimple6" type="Sprite2D" parent="."]
+position = Vector2(236, 154)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_152v1")
+
+[node name="BubbleSheet" type="Sprite2D" parent="."]
+position = Vector2(37, 151)
+rotation = 0.268895
+scale = Vector2(2, 2)
+texture = ExtResource("5_2oi36")
 
 [connection signal="pressed" from="Menu Principal/VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="Menu Principal/VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]

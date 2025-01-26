@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=4 uid="uid://btiycbts4icfn"]
 
-[ext_resource type="PackedScene" uid="uid://7slf76pp6ve8" path="res://Jugador/bubblemancer.tscn" id="1_e26fo"]
 [ext_resource type="PackedScene" uid="uid://drieqv0q3qej6" path="res://Menu UI/Pausa/pausa.tscn" id="2_pdgpf"]
 [ext_resource type="PackedScene" uid="uid://54f82birtyi0" path="res://Jugador/bubblemancerG2.tscn" id="2_rbg81"]
 [ext_resource type="TileSet" uid="uid://dnvdwguuor46w" path="res://Scenas/new_tile_set.tres" id="4_0faux"]
 [ext_resource type="PackedScene" uid="uid://bwiee7akhd6ug" path="res://Scenas/Elementos/aire.tscn" id="5_wdekw"]
+[ext_resource type="PackedScene" uid="uid://baytnivgh28eb" path="res://Scenas/Elementos/pincho.tscn" id="5_xk7pi"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_jg4g2"]
 
@@ -30,20 +30,29 @@ position = Vector2(0, 5.5)
 scale = Vector2(29.625, 0.171875)
 texture = SubResource("GradientTexture2D_avi2x")
 
-[node name="Bubblemancer" parent="." instance=ExtResource("1_e26fo")]
-position = Vector2(136, 24)
-velocidad = 100.0
-salto = -400.0
-
 [node name="Pausa" parent="." instance=ExtResource("2_pdgpf")]
 visible = false
 
-[node name="Bubblemancer2" parent="." instance=ExtResource("2_rbg81")]
+[node name="Bubblemancer" parent="." instance=ExtResource("2_rbg81")]
 position = Vector2(43, 23)
+vida_maxima = 20
+flotabilidad = -10.0
+salto_burbijoide = -100.0
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAACAAMAAAABAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAEAAAAAAAUAAAAAAAIAAAABAAMAAAABAAAAAAABAAQAAAABAAEAAAABAAUAAAABAAIAAAACAAQAAAABAAEAAAACAAUAAAABAAIAAAADAAMAAAABAAAAAAADAAQAAAABAAEAAAADAAUAAAABAAIAAAAEAAMAAAABAAAAAAAEAAQAAAABAAEAAAAEAAUAAAABAAIAAAAFAAMAAAABAAAAAAAFAAQAAAABAAEAAAAFAAUAAAABAAIAAAAGAAMAAAABAAAAAAAGAAQAAAABAAEAAAAGAAUAAAABAAIAAAAHAAMAAAABAAAAAAAHAAQAAAABAAEAAAAHAAUAAAABAAIAAAAIAAMAAAABAAAAAAAIAAQAAAABAAEAAAAIAAUAAAABAAIAAAAJAAMAAAABAAAAAAAJAAQAAAABAAEAAAAJAAUAAAABAAIAAAAKAAMAAAACAAAAAAAKAAQAAAACAAEAAAAKAAUAAAACAAIAAAANAAMAAAAAAAQAAAAOAAMAAAABAAQAAAAPAAMAAAACAAQAAAATAAIAAAAAAAQAAAAUAAIAAAABAAQAAAAVAAIAAAACAAQAAAAcAAMAAAAAAAQAAAAdAAMAAAABAAQAAAAeAAMAAAACAAQAAAAlAAMAAAAAAAQAAAAmAAMAAAABAAQAAAAnAAMAAAACAAQAAAAYAAMAAAAEAAQAAAAgAAQAAAAEAAQAAAA=")
 tile_set = ExtResource("4_0faux")
 
 [node name="Aire" parent="." instance=ExtResource("5_wdekw")]
-position = Vector2(194, 159)
+position = Vector2(195, 166)
+
+[node name="Pinchos" type="Node" parent="."]
+
+[node name="Pincho" parent="Pinchos" instance=ExtResource("5_xk7pi")]
+position = Vector2(236, 40)
+
+[node name="Pincho2" parent="Pinchos" instance=ExtResource("5_xk7pi")]
+position = Vector2(319, 25)
+
+[node name="Pincho3" parent="Pinchos" instance=ExtResource("5_xk7pi")]
+position = Vector2(295, 162)

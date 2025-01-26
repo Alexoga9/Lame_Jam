@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://baytnivgh28eb"]
+
+[ext_resource type="Texture2D" uid="uid://clv4rqgrrotoi" path="res://Assets/Sprite/SpikeGround.png" id="1_rcucl"]
+[ext_resource type="Script" path="res://Scenas/Elementos/hurt.gd" id="2_4taob"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_k0dhr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_md7xx"]
+size = Vector2(5, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4qva0"]
+size = Vector2(7, 11)
+
+[node name="Pincho" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rcucl")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+physics_material_override = SubResource("PhysicsMaterial_k0dhr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 3)
+shape = SubResource("RectangleShape2D_md7xx")
+
+[node name="Hurt" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("2_4taob")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurt"]
+position = Vector2(0.5, 2.5)
+shape = SubResource("RectangleShape2D_4qva0")
+
+[connection signal="body_entered" from="Hurt" to="Hurt" method="_on_body_entered"]

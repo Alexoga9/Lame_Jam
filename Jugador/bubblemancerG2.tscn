@@ -28,7 +28,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("%Animacion/..:rotation")
+tracks/0/path = NodePath("..:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -56,7 +56,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("%Animacion/..:rotation")
+tracks/0/path = NodePath("..:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -73,13 +73,14 @@ _data = {
 "Walk": SubResource("Animation_s3x8e")
 }
 
-[node name="Bubblemancer" type="CharacterBody2D"]
+[node name="Bubblemancer" type="CharacterBody2D" groups=["Jugador"]]
 collision_layer = 2
 script = ExtResource("1_c5jt8")
+vida_maxima = 15
 velocidad = 100.0
-salto = -200.0
-flotabilidad = 25.0
-salto_burbijoide = -70.0
+salto = -400.0
+flotabilidad = -100.0
+salto_burbijoide = -400.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 1)
