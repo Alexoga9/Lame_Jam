@@ -112,8 +112,4 @@ pantalla = NodePath("../CanvasLayer/Pantalla de victoria")
 
 [node name="Bubblemancer" parent="." instance=ExtResource("5_bo2m8")]
 position = Vector2(9, 149)
-<<<<<<< Updated upstream
 vida_maxima = 10
-=======
-salto_burbijoide = -100.0
->>>>>>> Stashed changes
